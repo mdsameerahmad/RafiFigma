@@ -1,0 +1,11 @@
+.footerContainer {
+  padding-top: 10rem;
+}
+
+.imageUpdate {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  height: 80vh;
+  position: relative;
+  z-index: 10;
+}

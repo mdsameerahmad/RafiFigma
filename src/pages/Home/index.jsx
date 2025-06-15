@@ -1,4 +1,3 @@
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -9,9 +8,9 @@ import Button from '../../components/ui/Button';
 
 const Home = () => {
   useEffect(() => {
-    AOS.init({ 
+    AOS.init({
       duration: 1200,
-      once: true 
+      once: true,
     });
   }, []);
 
@@ -23,13 +22,13 @@ const Home = () => {
       <Header />
 
       {/* New Hero Section */}
-      <div 
+      <div
         className="relative min-h-screen flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32"
         style={{
           backgroundImage: 'url(/images/img77.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -42,34 +41,38 @@ const Home = () => {
           <p className="text-lg sm:text-1xl md:text-2xl text-gray-200 mb-12">
             We craft experiences, not just visuals — made to convert.
           </p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Button
-                onClick={handleStartProject}
-                variant="primary"
-                size="md"
-                className="bg-white text-black hover:bg-opacity-90 transition-all duration-300 min-w-[200px]"
-              >
-                Start a Project
-              </Button>
-              <Button
-                onClick={handleViewWork}
-                variant="outline"
-                size="md"
-                className="border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 p-[12px] min-w-[200px]"
-              >
-                View Our Work
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-6">
+            <Button
+              onClick={handleStartProject}
+              variant="outline"
+              size="md"
+              className="bg-white text-black border border-black hover:bg-black hover:text-white  hover:border-white transition-all duration-300 min-w-[200px]"
+            >
+              Start a Project
+            </Button>
+            <Button
+              onClick={handleViewWork}
+              variant="outline"
+              size="md"
+              className="border-2 border-white text-white hover:bg-white hover:text-black hover:border-black transition-all duration-300 p-[12px] min-w-[200px]"
+            >
+              View Our Work
+            </Button>
           </div>
+        </div>
       </div>
 
       {/* Why NEXRO Section */}
-      <div className="py-16 md:py-20 px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-center" data-aos="fade-up">
+      <div
+        className="py-16 md:py-20 px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-center"
+        data-aos="fade-up"
+      >
         <h2 className="font-satoshi font-medium text-2xl sm:text-3xl md:text-4xl leading-9 text-global-5 mb-6 md:mb-8">
           WHY NEXRO
         </h2>
         <p className="font-satoshi font-medium text-lg md:text-xl leading-7 tracking-wide text-global-2 max-w-2xl mx-auto">
-          NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands grow, scale, and dominate.
+          NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands
+          grow, scale, and dominate.
         </p>
       </div>
 
@@ -77,12 +80,12 @@ const Home = () => {
       <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 pb-16 md:pb-20">
         {/* First Row - Single Large Card */}
         <div className="mb-8" data-aos="zoom-in-up">
-          <div 
+          <div
             className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] rounded-lg overflow-hidden"
             style={{
               backgroundImage: 'url(/images/capabilities-branding-r.jpg)',
               backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundPosition: 'center',
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-6 sm:p-8 md:p-12 lg:p-16">
@@ -91,7 +94,8 @@ const Home = () => {
                   BRANDING AND STRATEGY
                 </h3>
                 <p className="font-manrope font-light text-sm sm:text-base md:text-lg leading-relaxed text-white">
-                  NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands grow, scale, and dominate.
+                  NEXRO blends bold design, smart strategy & conversion-driven marketing to help
+                  brands grow, scale, and dominate.
                 </p>
               </div>
             </div>
@@ -101,12 +105,12 @@ const Home = () => {
         {/* Second Row - Two Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
           <div className="lg:col-span-2" data-aos="fade-right">
-            <div 
+            <div
               className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[646px] rounded-lg overflow-hidden"
               style={{
                 backgroundImage: 'url(/images/img__0x0.png)',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center p-6 sm:p-8 md:p-12 lg:p-16">
@@ -115,20 +119,21 @@ const Home = () => {
                     MARKETING & SALES
                   </h3>
                   <p className="font-manrope font-light text-sm sm:text-base md:text-lg leading-relaxed text-white">
-                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands grow, scale, and dominate.
+                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help
+                    brands grow, scale, and dominate.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div data-aos="fade-left">
-            <div 
+            <div
               className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[646px] rounded-lg overflow-hidden border border-gray-600"
               style={{
                 backgroundImage: 'url(/images/img__1.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                boxShadow: '0px 4px 6px rgba(136, 136, 136, 1)'
+                boxShadow: '0px 4px 6px rgba(136, 136, 136, 1)',
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center text-left p-6 sm:p-8 md:p-12">
@@ -137,7 +142,8 @@ const Home = () => {
                     SEO MARKETING
                   </h3>
                   <p className="font-manrope font-light text-xs sm:text-sm leading-5 text-global-3">
-                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands grow, scale, and dominate.
+                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help
+                    brands grow, scale, and dominate.
                   </p>
                 </div>
               </div>
@@ -148,28 +154,31 @@ const Home = () => {
         {/* Third Row - Two Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
           <div data-aos="fade-right">
-            <div 
+            <div
               className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[646px] rounded-lg overflow-hidden border border-gray-700"
               style={{
                 backgroundImage: 'url(/images/img__2.png)',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center p-6 sm:p-8">
-                <h3 className="font-sarpanch font-bold text-xl sm:text-2xl leading-8 tracking-wide text-global-1" data-aos="zoom-in">
+                <h3
+                  className="font-sarpanch font-bold text-xl sm:text-2xl leading-8 tracking-wide text-global-1"
+                  data-aos="zoom-in"
+                >
                   DIGITAL MARKETING
                 </h3>
               </div>
             </div>
           </div>
           <div className="lg:col-span-2" data-aos="fade-left">
-            <div 
+            <div
               className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[646px] rounded-lg overflow-hidden"
               style={{
                 backgroundImage: 'url(/images/img__3.png)',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center text-left p-6 sm:p-8 md:p-12">
@@ -178,7 +187,8 @@ const Home = () => {
                     MARKETING & SALES
                   </h3>
                   <p className="font-manrope font-normal text-sm sm:text-base leading-6 text-global-3">
-                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help brands grow, scale, and dominate.
+                    NEXRO blends bold design, smart strategy & conversion-driven marketing to help
+                    brands grow, scale, and dominate.
                   </p>
                 </div>
               </div>
@@ -188,20 +198,6 @@ const Home = () => {
       </div>
 
       {/* Your Services Section */}
-      <div className="py-16 md:py-20 px-6 sm:px-8 text-center" data-aos="zoom-in">
-        <h2 className="font-satoshi font-bold text-2xl sm:text-3xl md:text-4xl leading-8 tracking-wide text-global-5 mb-6 md:mb-8">
-          YOUR SERVICES
-        </h2>
-        <Button 
-          onClick={handleContactNow}
-          variant="primary"
-          size="lg"
-          className="bg-button-1 text-global-5 mx-auto"
-          data-aos="fade-up"
-        >
-          CONTACT NOW
-        </Button>
-      </div>
 
       {/* Let's Dive In Section */}
 

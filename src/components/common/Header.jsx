@@ -76,12 +76,12 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation Menu */}
-        <div className="hidden md:flex flex-row items-center gap-x-8 lg:gap-x-16">
+        <div className="hidden md:flex flex-row items-center gap-x-8 lg:gap-x-16 ">
           {menuItems.map((item, index) => (
-            <div key={index} className="flex flex-col items-start">
+            <div key={index} className="flex flex-col items-start pl-[50px]">
               <Link 
                 to={item.path}
-                className={`font-satoshi font-small text-base lg:text-lg leading-[25px] transition-colors duration-200 pl-[50px] ${
+                className={`font-satoshi font-small text-base lg:text-lg leading-[25px] transition-colors duration-200  ${
                   location.pathname === item.path 
                     ? 'text-global-5' : 'text-white hover:text-global-5'
                 }`}
