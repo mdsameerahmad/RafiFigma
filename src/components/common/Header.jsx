@@ -61,11 +61,10 @@ const Header = () => {
     { label: 'HOME', path: '/' },
     { label: 'SERVICE', path: '/service' },
     { label: 'WORK', path: '/work' },
-    { label: 'CONTACT', path: '/contact' }
   ];
 
   return (
-    <div className="relative z-50 w-full bg-transparent pt-4 pb-4 md:pt-7 md:pb-4">
+    <div className="fixed z-50 w-full bg-transparent pt-4 pb-4 md:pt-7 md:pb-4">
       <div className="flex flex-row items-center justify-between w-full max-w-[1122px] h-11 mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -82,7 +81,7 @@ const Header = () => {
             <div key={index} className="flex flex-col items-start">
               <Link 
                 to={item.path}
-                className={`font-satoshi font-medium text-base lg:text-lg leading-[25px] transition-colors duration-200 ${
+                className={`font-satoshi font-small text-base lg:text-lg leading-[25px] transition-colors duration-200 pl-[50px] ${
                   location.pathname === item.path 
                     ? 'text-global-5' : 'text-white hover:text-global-5'
                 }`}

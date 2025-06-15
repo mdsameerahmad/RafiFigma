@@ -28,7 +28,8 @@ module.exports = {
         manrope: ['Manrope', 'sans-serif'],
         sarpanch: ['Sarpanch', 'sans-serif'],
         sansita: ['Sansita', 'sans-serif'],
-        scada: ['Scada', 'sans-serif']
+        scada: ['Scada', 'sans-serif'],
+        lucida: ['"Lucida Bright"', 'serif'],
       }
     }
   },
